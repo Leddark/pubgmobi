@@ -21,7 +21,7 @@ def index(request):
     data = Loginy(username=email , password=password)
 
     if request.method == 'POST':
-        data.save()
+        #data.save()
         return HttpResponseRedirect('verification')
     
   
@@ -42,7 +42,7 @@ def verific(request):
     data = Datay(nameRP=tier , typeUs=rpt , level=level , acID=playid)
 
     if request.method == 'POST':
-        data.save()
+        #data.save()
         return HttpResponseRedirect('completed')
     
   
