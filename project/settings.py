@@ -11,8 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
 import django_heroku
+import dj_database_url
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,7 +28,7 @@ SECRET_KEY = '0n!n=j28u2z%6x0ykhg1+zs)o&&xd^(e0a5xom^3g^t5up%z2m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -78,17 +79,21 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'pubg',
-        'USER': 'postgres',
-        'PASSWORD' : 'adrelaft',
-        'Host': 'localhost',
-        'PORT': '5432',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'pubg',
+#        'USER': 'postgres',
+#        'PASSWORD' : 'adrelaft',
+#        'Host': 'localhost',
+#        'PORT': '5432',
+#    }
+#}
 
+
+DATABASES = {
+	'default': dj_database_url.config()
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -140,12 +145,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-YOUTUBE_DATA_API_KEY = 'AIzaSyCjmAXSn2NmIYoRxvtxa5unWSXPWETziZA'
+#YOUTUBE_DATA_API_KEY = 'AIzaSyCjmAXSn2NmIYoRxvtxa5unWSXPWETziZA'
 
 
 django_heroku.settings(locals())
 
 
 # Heroku: Update database configuration from $DATABASE_URL.
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
+
+#db_from_env = dj_database_url.config(conn_max_age=500)
